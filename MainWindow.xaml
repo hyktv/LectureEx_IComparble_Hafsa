@@ -6,7 +6,19 @@
         xmlns:local="clr-namespace:LectureEx_IComparble_Hafsa"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Canvas>
+        <Canvas.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF0B3F25" Offset="0.264"/>
+                <GradientStop Color="#FFD7D7D7" Offset="0.625"/>
+            </LinearGradientBrush>
+        </Canvas.Background>
+        <Button x:Name="Sort_List" Content="Sort List" Canvas.Left="124" Canvas.Top="46" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103"/>
+        <Button x:Name="Next" Content="NEXT" RenderTransformOrigin="0.205,-0.15" Canvas.Left="124" Canvas.Top="93" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103"/>
+        <Button x:Name="Sort" Content="Sort" Canvas.Left="124" Canvas.Top="268" RenderTransformOrigin="0.51,0.356" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103"/>
+        <ListBox x:Name="listbox" Height="115" Width="166" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="91" Canvas.Top="148"/>
+        <RadioButton Content="descending" Canvas.Left="124" Canvas.Top="347" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <RadioButton Content="ascending" Canvas.Left="124" Canvas.Top="313"/>
 
-    </Grid>
+    </Canvas>
 </Window>
